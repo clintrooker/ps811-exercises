@@ -1,0 +1,49 @@
+---
+title: "Exercise 3 Slides"
+author: "Clint Rooker"
+date: "10/2/2020"
+output: 
+  beamer_presentation:
+    theme: "Antibes"
+    colortheme: "beaver"
+    fonttheme: "structurebold"
+bibliography: r-references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Pros of Readings
+
+-Zaller's argument about top-down elite messaging is central to the study of public opinion
+
+-Found his argument to be convincing, yet undermines the notion of a coherent ideology in voters/the public
+
+-Wilson's "Truly Disadvantaged" was an amazing work in its scope and conclusions
+
+-Kinder's chapter in the Handbook gave me a very helpful bird's eye view of the public opinion literature
+
+
+## Cons of Readings
+
+-The assigned theory readings were a bit too abstract to be immediately useful to the contemporary analysis of political behavior 
+
+-I am still waiting for one of my courses to assign more empirical/experimental readings/articles
+
+
+
+## References 
+@gilbertHandbookSocialPsychology1998
+
+@krauseNondominationAgencyInequality2013 
+
+@millsIdealTheoryIdeology2005 
+
+@OxfordHandbookPolitical
+
+@wilsonTrulyDisadvantagedInner2006
+
+@zallerNatureOriginsMass1992:1
+
+@zallerWHATNATUREORIGINS2012
