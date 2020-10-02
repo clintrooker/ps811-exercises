@@ -1,0 +1,234 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  english,
+  man]{apa6}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Week 9/28 Readings},
+  pdfauthor={Clinton Rooker},
+  pdflang={en-EN},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+% Manuscript styling
+\usepackage{upgreek}
+\captionsetup{font=singlespacing,justification=justified}
+
+% Table formatting
+\usepackage{longtable}
+\usepackage{lscape}
+% \usepackage[counterclockwise]{rotating}   % Landscape page setup for large tables
+\usepackage{multirow}		% Table styling
+\usepackage{tabularx}		% Control Column width
+\usepackage[flushleft]{threeparttable}	% Allows for three part tables with a specified notes section
+\usepackage{threeparttablex}            % Lets threeparttable work with longtable
+
+% Create new environments so endfloat can handle them
+% \newenvironment{ltable}
+%   {\begin{landscape}\begin{center}\begin{threeparttable}}
+%   {\end{threeparttable}\end{center}\end{landscape}}
+\newenvironment{lltable}{\begin{landscape}\begin{center}\begin{ThreePartTable}}{\end{ThreePartTable}\end{center}\end{landscape}}
+
+% Enables adjusting longtable caption width to table width
+% Solution found at http://golatex.de/longtable-mit-caption-so-breit-wie-die-tabelle-t15767.html
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+
+% \setlength{\parindent}{0.5in}
+% \setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+% \usepackage{etoolbox}
+\makeatletter
+\patchcmd{\HyOrg@maketitle}
+  {\section{\normalfont\normalsize\abstractname}}
+  {\section*{\normalfont\normalsize\abstractname}}
+  {}{\typeout{Failed to patch abstract.}}
+\patchcmd{\HyOrg@maketitle}
+  {\section{\protect\normalfont{\@title}}}
+  {\section*{\protect\normalfont{\@title}}}
+  {}{\typeout{Failed to patch title.}}
+\makeatother
+\shorttitle{9/28 Readings}
+\DeclareDelayedFloatFlavor{ThreePartTable}{table}
+\DeclareDelayedFloatFlavor{lltable}{table}
+\DeclareDelayedFloatFlavor*{longtable}{table}
+\makeatletter
+\renewcommand{\efloat@iwrite}[1]{\immediate\expandafter\protected@write\csname efloat@post#1\endcsname{}}
+\makeatother
+\usepackage{lineno}
+
+\linenumbers
+\usepackage{csquotes}
+\ifxetex
+  % Load polyglossia as late as possible: uses bidi with RTL langages (e.g. Hebrew, Arabic)
+  \usepackage{polyglossia}
+  \setmainlanguage[]{english}
+\else
+  \usepackage[shorthands=off,main=english]{babel}
+\fi
+
+\title{Week 9/28 Readings}
+\author{Clinton Rooker\textsuperscript{}}
+\date{}
+
+
+\affiliation{\vspace{0.5cm}\textsuperscript{} University of Wisconsin - Madison\\\textsuperscript{} }
+
+\abstract{
+This bibliography was created for PS 811 and it summarizes the readings
+for the week of 9/28/2020. The courses that these readings were for are
+PS 800, PS 825, and PS 904.
+}
+
+
+
+\begin{document}
+\maketitle
+
+\hypertarget{ps-800}{%
+\section{PS 800}\label{ps-800}}
+
+Krause (2013)
+Krause applies a theoretical analysis of racial discrimination in the United
+States by moving away from domination theory toward one of personal intentionality. As it is a theory article, it focuses more on deductive logic than any empirical methods. Krause believes that domination theory is not adequate in explaining contemporary Black subjugation because it modern day racism is sometimes unintentional and hidden (i.e implicit bias/attitudes), instead of former racism and discrimination which involved active repression and control. The conclusion is that by viewing discrimination as non-domination in practice, the US can work towards a clearer set of policies to combat discrimination, instead of the anachronistic model currently applied.
+
+(``The Oxford Handbook of Political Theory - Google Books,'' n.d.)
+This piece provides an overview of theory as separate from the study of history and philosophy. The methods, then, are that of a literature review. History, the author suggests, is focused on what happened, but rarely asks why or how. Philosophy is closer to political theory, but operates more in terms of formal logic than does theory, and oftentimes lacks the political context of theory. Political theory, then is more scientific in that it takes and tests empiric claims, albeit differently than the other subfields of political science. In this way, political theory is replicable, provable, and able to be tested across and withing political contexts.
+\# PS 825
+Wilson (2006)
+The Truly Disadvantaged seeks to explain the precipitous decline in the condition
+of the inner city between the 1960's-80's. His argument is controversial, as
+it focuses on aberrant social behavior that he calls social dislocations.
+The social dislocations he finds as the largest drivers of the deterioration
+of the Black underclass are out-of-wedlock birth and declining marriage rates,
+both fueled by the decline in the male marriageable pool, which in turn, is
+driven by increased joblessness, economic changes, and demographic alterations in the inner city. He argues that policy makers should focus more on race neutral policies and universal welfare programs that would garner more political support, and in turn, be more viable. Race based policies, he believes, benefit only upper class Black Americans, and he believes universal policies would be more helpful to the underclass of Black Americans.
+
+\hypertarget{ps-904}{%
+\section{PS 904}\label{ps-904}}
+
+Zaller (2012)
+Zaller revisits his magnum opus to revise a particular thesis of his. Namely,
+he doubts whether \enquote{science minded elites} are in fact the drivers of public
+opinion, as his original argument suggests. Instead, he begins to move
+towards a more political set of elites, comprised of group interest and party
+apparatuses. This revision accommodates his original RAS model and follows the
+similar deductive approach of his original work.
+
+Zaller and R (1992)
+The Nature and Origins of Mass Opinion uses a deductive approach and applies
+very little by way of advanced statistical analysis. This is due to the author's
+stated purpose of the book: to create a broad and unified theory on the
+generation and dissemination of public opinion, and its implication on the
+measurement of public opinion. Leaning heavily on the social and cognitive
+psychology literature, Zaller constructs his RAS Model of public opinion.
+He concludes that individuals sort through the pertinent political information
+that is \enquote{on the top of their heads} and retrieve only the most salient data
+when responding to a survey. The model is comprised of Reception, Resistance,
+Accessibility, and Response axioms, which determine the on the spot generation
+of a survey response. This undermines the notion of a cogent ideology in the
+mass public, and argues that opinion is shaped by elite level discourses and
+individual predispositions.
+
+Gilbert, Fiske, and Lindzey (1998)
+The pertinent chapter of this book was the piece by Donald Kinder, summarizing
+the historic and contemporary developments of public opinion and its
+measurement. He provides an accepted definition of public opinion, explains
+its utility (or lack thereof), and examines the intelligence, tolerance, and
+coherence of the mass public. This book is mainly a literature review, typical
+of the Handbook series.
+
+\newpage
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-gilbertHandbookSocialPsychology1998}{}%
+Gilbert, D. T., Fiske, S. T., \& Lindzey, G. (1998). \emph{The Handbook of Social Psychology}. McGraw-Hill.
+
+\leavevmode\hypertarget{ref-krauseNondominationAgencyInequality2013}{}%
+Krause, S. R. (2013). Beyond non-domination: Agency, inequality and the meaning of freedom. \emph{Philosophy \& Social Criticism}, \emph{39}(2), 187--208. \url{https://doi.org/10.1177/0191453712470360}
+
+\leavevmode\hypertarget{ref-OxfordHandbookPolitical}{}%
+The Oxford Handbook of Political Theory - Google Books. (n.d.). https://www.google.com/books/edition/The\_Oxford\_Handbook\_of\_Political\_Theory/9dkaR1GQHRkC?hl=en\&gbpv=1\&dq=oxford+handbook+of+political+theory\&printsec=frontcover.
+
+\leavevmode\hypertarget{ref-wilsonTrulyDisadvantagedInner2006}{}%
+Wilson, W. J. (2006). \emph{The truly disadvantaged: The inner city, the underclass, and public policy} (Paperback ed., {[}Nachdr.{]}). Chicago: Univ. of Chicago Press.
+
+\leavevmode\hypertarget{ref-zallerWHATNATUREORIGINS2012}{}%
+Zaller, J. (2012). WHAT \emph{NATURE AND ORIGINS} LEAVES OUT. \emph{Critical Review}, \emph{24}(4), 569--642. \url{https://doi.org/10.1080/08913811.2012.807648}
+
+\leavevmode\hypertarget{ref-zallerNatureOriginsMass1992}{}%
+Zaller, J. R., \& R, Z. J. (1992). \emph{The Nature and Origins of Mass Opinion}. Cambridge University Press.
+
+\endgroup
+
+
+\end{document}
