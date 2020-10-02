@@ -55,53 +55,23 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
 # PS 800
-@krauseNondominationAgencyInequality2013
-Krause applies a theoretical analysis of racial discrimination in the United 
+
+@krauseNondominationAgencyInequality2013 applies a theoretical analysis of racial discrimination in the United 
 States by moving away from domination theory toward one of personal intentionality. As it is a theory article, it focuses more on deductive logic than any empirical methods. Krause believes that domination theory is not adequate in explaining contemporary Black subjugation because it modern day racism is sometimes unintentional and hidden (i.e implicit bias/attitudes), instead of former racism and discrimination which involved active repression and control. The conclusion is that by viewing discrimination as non-domination in practice, the US can work towards a clearer set of policies to combat discrimination, instead of the anachronistic model currently applied. 
 
-@OxfordHandbookPolitical
-This piece provides an overview of theory as separate from the study of history and philosophy. The methods, then, are that of a literature review. History, the author suggests, is focused on what happened, but rarely asks why or how. Philosophy is closer to political theory, but operates more in terms of formal logic than does theory, and oftentimes lacks the political context of theory. Political theory, then is more scientific in that it takes and tests empiric claims, albeit differently than the other subfields of political science. In this way, political theory is replicable, provable, and able to be tested across and withing political contexts. 
+@OxfordHandbookPolitical provides an overview of theory as separate from the study of history and philosophy. The methods, then, are that of a literature review. History, the author suggests, is focused on what happened, but rarely asks why or how. Philosophy is closer to political theory, but operates more in terms of formal logic than does theory, and oftentimes lacks the political context of theory. Political theory, then is more scientific in that it takes and tests empiric claims, albeit differently than the other subfields of political science. In this way, political theory is replicable, provable, and able to be tested across and withing political contexts. 
+
 # PS 825
-@wilsonTrulyDisadvantagedInner2006
-The Truly Disadvantaged seeks to explain the precipitous decline in the condition 
-of the inner city between the 1960's-80's. His argument is controversial, as 
-it focuses on aberrant social behavior that he calls social dislocations. 
-The social dislocations he finds as the largest drivers of the deterioration 
-of the Black underclass are out-of-wedlock birth and declining marriage rates, 
-both fueled by the decline in the male marriageable pool, which in turn, is 
-driven by increased joblessness, economic changes, and demographic alterations in the inner city. He argues that policy makers should focus more on race neutral policies and universal welfare programs that would garner more political support, and in turn, be more viable. Race based policies, he believes, benefit only upper class Black Americans, and he believes universal policies would be more helpful to the underclass of Black Americans. 
+
+@wilsonTrulyDisadvantagedInner2006 seeks to explain the precipitous decline in the condition  of the inner city between the 1960's-80's. His argument is controversial, as it focuses on aberrant social behavior that he calls social dislocations. The social dislocations he finds as the largest drivers of the deterioration of the Black underclass are out-of-wedlock birth and declining marriage rates, both fueled by the decline in the male marriageable pool, which in turn, is driven by increased joblessness, economic changes, and demographic alterations in the inner city. He argues that policy makers should focus more on race neutral policies and universal welfare programs that would garner more political support, and in turn, be more viable. Race based policies, he believes, benefit only upper class Black Americans, and he believes universal policies would be more helpful to the underclass of Black Americans. 
 
 # PS 904
-@zallerWHATNATUREORIGINS2012
-Zaller revisits his magnum opus to revise a particular thesis of his. Namely, 
-he doubts whether "science minded elites" are in fact the drivers of public 
-opinion, as his original argument suggests. Instead, he begins to move 
-towards a more political set of elites, comprised of group interest and party 
-apparatuses. This revision accommodates his original RAS model and follows the 
-similar deductive approach of his original work.
 
-@zallerNatureOriginsMass1992 
-The Nature and Origins of Mass Opinion uses a deductive approach and applies 
-very little by way of advanced statistical analysis. This is due to the author's 
-stated purpose of the book: to create a broad and unified theory on the 
-generation and dissemination of public opinion, and its implication on the 
-measurement of public opinion. Leaning heavily on the social and cognitive 
-psychology literature, Zaller constructs his RAS Model of public opinion. 
-He concludes that individuals sort through the pertinent political information
-that is "on the top of their heads" and retrieve only the most salient data 
-when responding to a survey. The model is comprised of Reception, Resistance, 
-Accessibility, and Response axioms, which determine the on the spot generation
-of a survey response. This undermines the notion of a cogent ideology in the 
-mass public, and argues that opinion is shaped by elite level discourses and 
-individual predispositions.
+@zallerWHATNATUREORIGINS2012 revisits his magnum opus to revise a particular thesis of his. Namely, he doubts whether "science minded elites" are in fact the drivers of public opinion, as his original argument suggests. Instead, he begins to move towards a more political set of elites, comprised of group interest and party apparatuses. This revision accommodates his original RAS model and follows the similar deductive approach of his original work.
 
-@gilbertHandbookSocialPsychology1998
-The pertinent chapter of this book was the piece by Donald Kinder, summarizing 
-the historic and contemporary developments of public opinion and its 
-measurement. He provides an accepted definition of public opinion, explains
-its utility (or lack thereof), and examines the intelligence, tolerance, and 
-coherence of the mass public. This book is mainly a literature review, typical
-of the Handbook series. 
+@zallerNatureOriginsMass1992 uses a deductive approach and applies very little by way of advanced statistical analysis. This is due to the author's stated purpose of the book: to create a broad and unified theory on the generation and dissemination of public opinion, and its implication on the measurement of public opinion. Leaning heavily on the social and cognitive psychology literature, Zaller constructs his RAS Model of public opinion. He concludes that individuals sort through the pertinent political information that is "on the top of their heads" and retrieve only the most salient data when responding to a survey. The model is comprised of Reception, Resistance, Accessibility, and Response axioms, which determine the on the spot generation of a survey response. This undermines the notion of a cogent ideology in the mass public, and argues that opinion is shaped by elite level discourses and individual predispositions.
+
+The pertinent chapter of @gilbertHandbookSocialPsychology1998 was the piece by Donald Kinder, summarizing the historic and contemporary developments of public opinion and its measurement. He provides an accepted definition of public opinion, explains its utility (or lack thereof), and examines the intelligence, tolerance, and coherence of the mass public. This book is mainly a literature review, typical of the Handbook series. 
 
 
 \newpage
