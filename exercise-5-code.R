@@ -1,4 +1,6 @@
 #1 downloaded data and codebook
+# MS: where are the packages you loaded?
+# MS: how did you load the data? please input the read.csv() commands.
 here()
 #2
 food_data <- food_coded
@@ -12,6 +14,7 @@ food_first_95[, c("GPA","calories_chicken", "drink", "fav_cuisine", "father_prof
 food_first_95[, c(1, 4, 16, 25, 26, 45)]
 
 #5 
+# MS: create variables that are meaningful
 food_first_95$health <- food_first_95$healthy_feeling*10
 
 #6
@@ -33,6 +36,7 @@ data_means <- data.frame(chicken_mean <- mean(food_first_95$calories_chicken, na
            )
 
 #9
+# MS: check answer key
 aggregate(formula = cbind(Gender, cuisine) ~ GPA + weight, 
           data = food_first_95, 
           FUN = function(x){
@@ -42,6 +46,7 @@ aggregate(formula = cbind(Gender, cuisine) ~ GPA + weight,
 #Tidy 
 
 #1 and 2 just uploading data 
+# MS: uploading data commands need to be clear
 #3
 bottom_500 <- top_n(facebook_fact_check, -500)
 
@@ -50,6 +55,7 @@ select(bottom_500, "post_id", "Page", "Date Published", "Rating", "share_count",
 
 
 #5 
+# MS: case_when doesn't work for var == character. please check answer key.
 bottom_500 <- mutate(bottom_500, post_type_coded =
                        case_when(`Post Type`=="link"~"1",
                                  `Post Type`=="photo"~"2",
