@@ -1,0 +1,17 @@
+---
+title: "Research Proposal 811"
+author: "Clint Rooker"
+date: "10/30/2020"
+output: html_document
+---
+1) I am interested in examining how voters in Flint, Michigan, view their local electoral processes in the aftermath of the Flint Water Crisis. One approach may be to look at local election turnout before and after the occurrence of the water crisis. Then, I could examine the ~80 interviews I have to understand how citizens conceptualize the vote and local politics. The ultimate goal would be to lay a foundation for future research on electoral politics in areas of crisis, and may also have implications on the utility income model of voting, where the costs associated with voting are difficult to measure (e.g. trauma, self-efficacy, distrust, etc.)
+
+2) I am unsure how to approach this, since my paper will mostly be qualitative in nature. I am thinking that I could measure the frequency of terms/construct a network of ideas/a word cloud sort of thing. For the pre and post local election involvement, the independent variable(s) could be precinct area, census tract, areas with high lead concentration/pipe replacement, and household income, with my dependent variable being voter turnout. I could also do an analysis of protests in the major local newspapers to guage non-institutional forms of political participation. 
+
+3) For the qualitative analysis, I intend to look for broad and recurring themes as they relate to citizen participation. This will mostly be related to positive and negative affect towards local politicians, elites, and general attitudes towards democracy, all in the context of the Flint water crisis. To measure the quantitative variables, I could look at proportion of lead contamination housholds per census tract, racial composition of tract, and voter turnout per tract as a proportion of voting age population per precinct. 
+
+4) I already have collected and coded the qualitative interviews. I would like to obtain the voter information via the Genesee County Elections Office, which would give me an idea of voter turnout per ward for the past 2 decades or so. There has been ample work on contamination by tract/neighborhood. I would also need to access census tract data for the city's 9 wards. 
+
+5) Qualitatively, I will probably use an inductive approach to identify key themes and conceptualizations of Flint residents. This area of work provides ample room to dig deeper into the rationalizations and motivations of Flint area residents and has experienced something of a rebirth in political science in the past 10 years or so. For the empirical side of things, I could probably run a regression on likelihood to vote on the precinct level given the variables of interest mentioned above. 
+
+Ideally, I would do the data analysis for this project between now and the end of winter break, with the goal of writing a stand alone empirical paper with other survey research that I conducted in Flint, which measures beliefs, attitudes, and trauma of Flint residents. For this seminar paper, I would likely rely solely on the qualitative side of things. I don't want to attempt to do too much in one space, as these two ideas could produce two separate papers that go hand in hand. But, I need to get started on the quantitative stuff now, because that will take much longer (as I do not have all of these skills yet...which is daunting at best). 
