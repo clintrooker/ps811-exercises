@@ -22,6 +22,8 @@ justices_info <- data.frame(justice, state, position, replacing, yearconfirmed,
 view(justices_info)
 
 #download and view data for #2-3
+# ms: please show how you loaded the data
+# ms: also you want to see whether the justiceNames are all the same after the merge
 table(justices$justiceName)
 table(SCDB_2020_01_justiceCentered_Citation$justiceName)
 
@@ -29,16 +31,27 @@ table(SCDB_2020_01_justiceCentered_Citation$justiceName)
 merged_table <- inner_join(justices, SCDB_2020_01_justiceCentered_Citation, 
                            by = "justiceName")
 
+#ms: consider merging by both justiceName and term so you don't have to denote term by term.x
+merged_table <- inner_join(scotus, justices, 
+                           by = c("justiceName", "term"))
+
+#####
+
 merged_table
 
 #attempted to filter for #4
 view(filter(merged_table, post_mn != NA)) 
 #tried to filter based on those values are not equal to NA, so I would only get
 #those instances where a Martin Quinn Score exists. 
+# ms: the above code didn't work for me. it should be this?:
+# merged_table <- View(filter(merged_table, !is.na(post_mn)))
+# you need to do this so code in #5 would work
 
 #used complete.cases instead to observe only those with complete data 
 #(i.e. only those with Martin Quinn Scores)
 complete.cases <- (merged_table)
+# ms: this isn't doing what you think it's doing...
+# I would check out this page on the complete.cases() function: https://statisticsglobe.com/complete-cases-in-r-example/
 
 #5 
 merged_table %>%
@@ -53,8 +66,28 @@ merged_table <- mutate(merged_table,
         decisionDirection == 2 ~ -1)) #Re-code for unspecified
 #I tried to do this with piping (e.g. merged_table %>% ...) but it wouldn't apply
 #to the table. 
+
+# ms: this works:
+merged_table <- merged_table %>%
+  mutate(decisionDirection = case_when(
+                         decisionDirection == 3 ~ 0,
+                         decisionDirection == 1 ~ 1,
+                         decisionDirection == 2 ~ -1))
+
+####
+
+
 merged_table %>%
   group_by(term.x) %>%
   summarise(mean = mean(decisionDirection, na.rm = TRUE), n = n())
+
+# ms: where are the MQ scores? calculate the mean for post_mn as well:
+
+merged_table %>%
+  group_by(term) %>%
+  summarise(mean = mean(decisionDirection, na.rm = TRUE), n = n(),
+            mean = mean(post_mn, na.rm = TRUE), n = n())
+
+```
 
 #The two values are now in the same direction and similar with one another. 
